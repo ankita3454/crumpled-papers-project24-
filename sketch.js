@@ -8,7 +8,7 @@ const Body = Matter.Body;
 
 
 function setup() {
-	createCanvas(800, 700);
+	createCanvas(1600, 1600);
 
 
 	engine = Engine.create();
@@ -21,9 +21,9 @@ function setup() {
 	
 	paper1= new paper(100,250,40);
 	
-	d1= new dustbin(680,590,20,100);
-	d2= new dustbin(480,590,20,100);
-	d3= new dustbin(580,640,220,20);
+	d1= new dustbin(1180,590,20,100);
+	d2= new dustbin(980,590,20,100);
+	d3= new dustbin(1080,640,220,20);
 	
 	
 
@@ -34,7 +34,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background("white");
   
   
   drawSprites();

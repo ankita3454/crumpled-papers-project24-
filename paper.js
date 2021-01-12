@@ -9,22 +9,25 @@
            'friction': 0.5,
            'density': 1.2
         }
-        
-        this.body=Bodies.circle(x, y, radius, options)
+		
+		//this.image=loadImage("paper.png");
+        this.body=Bodies.circle(x, y, radius/2, options);
 		this.radius=radius;
 		World.add(world, this.body);
 
 	}
 	display()
+
+
 	{
 			
 			var paperpos=this.body.position;		
             push()
 			translate(paperpos.x, paperpos.y);
-			rectMode(CENTER)
-			fill("pink")
-			ellipse(0,0,this.radius, this.radius);
-			pop()
+			rectMode(CENTER);
+			fill("pink");
+			ellipse(0,0,this.radius,this.radius);
+			pop();
 			
 	}
 
